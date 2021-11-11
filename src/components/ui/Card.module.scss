@@ -1,0 +1,9 @@
+$card-bg: #d5d3d3;
+
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  background: $card-bg;
+  border-radius: .3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}

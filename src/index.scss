@@ -1,0 +1,48 @@
+$main-font-family: 'Roboto', sans-serif;
+$bg-color: #292929;
+$button-bg: #5b008c;
+$button-border: 1px solid #5b008c;
+$button-text-color: white;
+$button-bg-hover: #8303d0;
+$button-border-hover: 1px solid #8303d0;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $main-font-family;
+  background: $bg-color;
+}
+
+.centered {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focused {
+  font-size: 5rem;
+  color: white;
+  margin-top: 3rem;
+}
+
+.btn {
+  padding: 1rem 1rem;
+  background: $button-bg;
+  border: $button-border;
+  color: $button-text-color;
+  border-radius: .3rem;
+  cursor: pointer;
+  &:hover {
+    background: $button-bg-hover;
+    border: $button-border-hover;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+}

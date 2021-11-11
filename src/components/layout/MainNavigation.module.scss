@@ -1,0 +1,108 @@
+$header-bg: #5b008c;
+$text-color: white;
+$hover-text-color: #c063ce;
+$logo-font-size: 2rem;
+$nav-item-font-size: 1.25rem;
+$nav-item-margin: 1.25rem;
+
+.header {
+  height: 5rem;
+  display: flex;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  background: $header-bg;
+}
+
+.logo {
+  a {
+    font-size: $logo-font-size;
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.nav-links {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    font-size: $nav-item-font-size;
+    margin-left: $nav-item-margin;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &.active{
+      color: $hover-text-color;
+    }
+  }
+
+}
+
+.toggle-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .toggle-btn {
+    display: flex;
+    color: $text-color;
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+
+    ul {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    li {
+      padding: .5rem;
+      a {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+
+  .active-links {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 370px){
+
+  .logo {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .toggle-btn {
+    top: .3rem;
+    width: 40px;
+  }
+
+}

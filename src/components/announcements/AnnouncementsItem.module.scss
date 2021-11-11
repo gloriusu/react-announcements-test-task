@@ -1,0 +1,82 @@
+$item-bg: #afabab;
+$item-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  background: $item-bg;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: .3rem;
+  height: 20rem;
+  box-shadow: $item-shadow;
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+
+  }
+  .description-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    p, a {
+      font-size: 1.25rem;
+    }
+
+    .link {
+      display: flex;
+      justify-content: center;
+
+      a {
+        margin-top: .3rem;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+      }
+
+    }
+
+  }
+
+  .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      font-style: italic;
+      font-weight: bold;
+      span{
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .announcement {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+
+
+
+
+
+

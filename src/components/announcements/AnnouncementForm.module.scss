@@ -1,0 +1,55 @@
+$loading-bg: rgba(255, 255, 255, 0.7);
+$input-bg-hover: #c1d1d1;
+
+.form {
+  position: relative;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $loading-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input, textarea {
+    font: inherit;
+    padding: 0.35rem;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    border: 1px solid #c1d1d1;
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  input:focus, textarea:focus {
+    background: $input-bg-hover;
+    outline-color: black;
+  }
+
+  .info {
+    color: tomato;
+    font-size: 1rem;
+  }
+}
+
+.actions {
+  text-align: right;
+
+  button {
+    font-size: 1.25rem;
+  }
+}
